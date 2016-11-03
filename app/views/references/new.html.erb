@@ -1,5 +1,5 @@
 <% provide(:title, 'Sign up') %>
-<h1>Add Reference</h1>
+<h1 align="center">Add a Reference</h1>
 
 <div class="row">
   <div class="col-md-6 col-md-offset-3">
@@ -7,31 +7,29 @@
     <%= render 'shared/error_messages' %>
 
 
-      <%= f.number_field :number, label: "Reference number", class: 'form-control' %>
+      <%= f.number_field :number, label: "Reference number", class: 'form-control', :required => true %>
 
 <br>
 
-      <%= f.text_field :kind, class: 'form-control' %>
-
-
-<br>
-
-
-      <%= f.text_field :title, label: "Article title", class: 'form-control' %>
+      <%= f.select :kind, ["Book", "Research paper/Journal article", "Web page", "Sound recording", "Film/TV recording"],
+      {label: "Where did you get this reference from?"} %>
 
 
 <br>
 
+      <%= f.text_field :title, label: "Article title", class: 'form-control', :required => true  %>
+
+
+<br>
 
       <%= f.text_field :author, class: 'form-control' %>
 
 <br>
 
-
-      <%= f.date_field :pubdate, label: "Publication date",class: 'form-control' %>
+      <%= f.date_select :pubdate, :prompt => {:year => "Year", :month => "Month"},
+      :start_year => 1800, :end_year => 2016, :discard_day => true, :label => "Publication Date" %>
 
 <br>
-
 
       <%= f.text_field :userid, label: "User ID",class: 'form-control' %>
 
