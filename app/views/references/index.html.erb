@@ -1,0 +1,32 @@
+<div class="container">
+  <div class="row">
+    <h3>References</h3>
+    <div class="column">
+      <table class="table">
+        <tbody>
+          <tr>
+            <th> User Id </th>
+            <th> Number</th>
+            <th> Kind </th>
+            <th> Title </th>
+            <th> Author </th>
+            <th> PubDate </th>
+
+          </tr>
+          <% @references.each do |reference| %>
+          <tr>
+          <td><%= reference.userid %></td>
+          <td><%= reference.number %></td>
+          <td><%= reference.kind %></td>
+          <td><%= reference.title %></td>
+          <td><%= reference.author %></td>
+          <td><%= reference.pubdate %></td>
+
+        </tr>
+
+          <% end %>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
