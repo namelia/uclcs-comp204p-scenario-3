@@ -6,3 +6,6 @@
 <p>Author: <%= @reference.author if @reference.author %></p>
 <p>Date: <%= @reference.pubdate if @reference.pubdate %></p>
 <p>UserID: <%= @reference.userid if @reference.userid %></p>
+<p>Notes: <%= @reference.notes if @reference.notes %></p>
+<%= link_to 'Edit', edit_reference_path(@reference) %>
+<%= link_to 'Back', references_path %>

@@ -11,6 +11,8 @@
             <th> Title </th>
             <th> Author </th>
             <th> PubDate </th>
+            <th> Notes </th>
+
 
           </tr>
           <% @references.each do |reference| %>
@@ -21,6 +23,10 @@
           <td><%= reference.title %></td>
           <td><%= reference.author %></td>
           <td><%= reference.pubdate %></td>
+          <td><%= reference.notes %></td>
+          <td><%= link_to 'Show', reference_path(reference) %></td>
+          <td><%= link_to 'Edit', edit_reference_path(reference) %></td>
+          <td><%= link_to 'Delete', reference_path(reference), method: :delete, data:{confirm: 'Are you sure?'}%></td>
 
         </tr>
 

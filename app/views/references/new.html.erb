@@ -35,7 +35,12 @@
 
 <br>
 
+      <%= f.text_field :notes, label: "Notes",class: 'form-control' %>
+
+<br>
+
       <%= f.submit "Add Reference", class: "btn btn-primary" %>
     <% end %>
   </div>
 </div>
+<%= link_to 'Back', references_path %>
