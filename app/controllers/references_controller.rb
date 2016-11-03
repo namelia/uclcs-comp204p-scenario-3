@@ -20,7 +20,7 @@ class ReferencesController < ApplicationController
   def create
       @reference = Reference.new(reference_params)
       if @reference.save
-        redirect_to @reference
+        redirect_to references_path, notice: "Successfully added reference!"
       else
         render 'new'
       end
@@ -30,7 +30,7 @@ class ReferencesController < ApplicationController
 
       def reference_params
         params.require(:reference).permit(:number, :title, :kind,
-                                     :author, :pubdate, :userid)
+                                     :author, :pubdate, :userid, :notes)
 
 
       end
