@@ -40,7 +40,8 @@
 <br>
 
       <%= f.submit "Confirm changes", class: "btn btn-primary" %>
+        <%= button_to 'Back', references_path,:class =>"btn btn-outline-primary",:method => :get %>
     <% end %>
   </div>
+
 </div>
-<%= link_to 'Back', references_path %>
