@@ -13687,3 +13687,28 @@ Processing by ReferencesController#index as HTML
 Completed 200 OK in 280ms (Views: 257.4ms | ActiveRecord: 1.0ms)
 
 
+Started GET "/" for ::1 at 2016-11-03 04:23:06 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (21.0ms)
+  Rendered layouts/_navigation_links.html.erb (1.0ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (6.0ms)
+  Rendered layouts/_navigation.html.erb (33.0ms)
+  Rendered layouts/_messages.html.erb (0.0ms)
+Completed 200 OK in 1594ms (Views: 1547.2ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/" for ::1 at 2016-11-03 04:23:28 +0000
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (3.0ms)
+  Rendered layouts/_navigation_links.html.erb (0.0ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (1.0ms)
+  Rendered layouts/_navigation.html.erb (29.0ms)
+  Rendered layouts/_messages.html.erb (1.0ms)
+Completed 200 OK in 300ms (Views: 285.2ms | ActiveRecord: 1.0ms)
+
+
