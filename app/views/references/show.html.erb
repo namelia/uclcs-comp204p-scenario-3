@@ -1,4 +1,6 @@
+<div class =container>
 <h3>Reference</h3>
+
 <p>ID: <%= @reference.id if @reference.id %></p>
 <p>Number: <%= @reference.number if @reference.number %></p>
 <p>Kind: <%= @reference.kind if @reference.kind %></p>
@@ -7,5 +9,7 @@
 <p>Date: <%= @reference.pubdate if @reference.pubdate %></p>
 <p>UserID: <%= @reference.userid if @reference.userid %></p>
 <p>Notes: <%= @reference.notes if @reference.notes %></p>
-<%= link_to 'Edit', edit_reference_path(@reference) %>
-<%= link_to 'Back', references_path %>
+<%= button_to 'Edit', edit_reference_path(@reference),:class =>"btn btn-outline-primary",:method => :get,:style =>"float:left" %>
+
+<%= button_to 'Back', references_path,:class =>"btn btn-outline-primary",:method => :get %>
+</div>

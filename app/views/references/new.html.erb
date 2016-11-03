@@ -35,7 +35,7 @@
 
 <br>
 
-      <%= f.text_field :notes, label: "Notes",class: 'form-control' %>
+      <%= f.text_field :notes, label: "Notes",class: 'form-control' ,:required => true %>
 
 <br>
 
@@ -43,4 +43,4 @@
     <% end %>
   </div>
 </div>
-<%= link_to 'Back', references_path %>
+<%= button_to 'Back', references_path,:class =>"btn btn-outline-primary",:method => :get %>
