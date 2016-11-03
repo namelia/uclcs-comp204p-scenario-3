@@ -9,7 +9,7 @@ class ReferencesController < ApplicationController
   def new
     @reference = Reference.new
   end
- 
+
   def show
     @reference = Reference.find(params[:id])
   end
@@ -21,7 +21,7 @@ class ReferencesController < ApplicationController
   def update
     @reference = Reference.find(params[:id])
     if @reference.update(reference_params)
-      redirect_to @reference 
+      redirect_to @reference
     else
       render 'edit'
     end
@@ -42,7 +42,7 @@ class ReferencesController < ApplicationController
 
     redirect_to references_path
   end
-  
+
     private
 
       def reference_params

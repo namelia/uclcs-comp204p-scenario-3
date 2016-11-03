@@ -22,7 +22,7 @@
             <th colspan= "3"> Manage </th>
           </tr>
 
-          <% @references.each do |reference| %>
+          <% @references.where(:userid => '1').each do |reference| %>
           <tr>
           <td><%= reference.userid %></td>
           <td><%= reference.number %></td>
