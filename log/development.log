@@ -11495,3 +11495,17 @@ Processing by ReferencesController#new as HTML
 Completed 200 OK in 872ms (Views: 833.0ms | ActiveRecord: 3.0ms)
 
 
+Started GET "/references/new" for ::1 at 2016-11-03 00:34:02 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ReferencesController#new as HTML
+  Rendering references/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (5.0ms)
+  Rendered references/new.html.erb within layouts/application (3190.2ms)
+  Rendered layouts/_navigation_links.html.erb (4.0ms)
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_nav_links_for_auth.html.erb (83.0ms)
+  Rendered layouts/_navigation.html.erb (292.0ms)
+  Rendered layouts/_messages.html.erb (2.0ms)
+Completed 200 OK in 10301ms (Views: 9912.4ms | ActiveRecord: 12.0ms)
+
+
