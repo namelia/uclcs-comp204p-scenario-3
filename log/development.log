@@ -19952,3 +19952,16 @@ Processing by VisitorsController#index as HTML
 Completed 200 OK in 62ms (Views: 60.5ms | ActiveRecord: 0.1ms)
 
 
+Started GET "/" for ::1 at 2016-11-04 01:04:16 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by VisitorsController#index as HTML
+  Rendering visitors/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (8.7ms)
+  Rendered layouts/_navigation_links.html.erb (0.6ms)
+  Rendered layouts/_nav_links_for_auth.html.erb (3.9ms)
+  Rendered layouts/_navigation.html.erb (7.7ms)
+  Rendered layouts/_messages.html.erb (0.5ms)
+Completed 200 OK in 353ms (Views: 337.7ms | ActiveRecord: 0.4ms)
+
+
